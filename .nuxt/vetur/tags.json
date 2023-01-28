@@ -1,0 +1,20 @@
+{
+  "BannerSlideComponent": {
+    "description": "Auto imported from components/BannerSlideComponent.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "FullScreenSlider": {
+    "description": "Auto imported from components/FullScreenSlider.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "MultiSlideComponent": {
+    "description": "Auto imported from components/MultiSlideComponent.vue"
+  },
+  "TwoSlideSlider": {
+    "description": "Auto imported from components/TwoSlideSlider.vue"
+  }
+}

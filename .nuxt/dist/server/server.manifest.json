@@ -1,0 +1,19 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/banner-slide-component.js": "components/banner-slide-component.js",
+    "components/full-screen-slider.js": "components/full-screen-slider.js",
+    "components/multi-slide-component.js": "components/multi-slide-component.js",
+    "components/two-slide-slider.js": "components/two-slide-slider.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/banner-slide-component.js": "components/banner-slide-component.js.map",
+    "components/full-screen-slider.js": "components/full-screen-slider.js.map",
+    "components/multi-slide-component.js": "components/multi-slide-component.js.map",
+    "components/two-slide-slider.js": "components/two-slide-slider.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
