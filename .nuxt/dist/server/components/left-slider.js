@@ -1,94 +1,46 @@
-exports.ids = [3];
+exports.ids = [4];
 exports.modules = {
 
-/***/ 127:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(132);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to SSR context
-var add = __webpack_require__(5).default
-module.exports.__inject__ = function (context) {
-  add("fc2510ca", content, true, context)
-};
-
-/***/ }),
-
-/***/ 131:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FullScreenSlider_vue_vue_type_style_index_0_id_496214af_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(127);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FullScreenSlider_vue_vue_type_style_index_0_id_496214af_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FullScreenSlider_vue_vue_type_style_index_0_id_496214af_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FullScreenSlider_vue_vue_type_style_index_0_id_496214af_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FullScreenSlider_vue_vue_type_style_index_0_id_496214af_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ 132:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".container-fluid[data-v-496214af]{padding:unset!important}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 137:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/FullScreenSlider.vue?vue&type=template&id=496214af&scoped=true&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/LeftSlider.vue?vue&type=template&id=e2a9833c&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('div', [_vm._ssrNode("<div class=\"container-fluid\" data-v-496214af>", "</div>", [_vm._ssrNode("<div class=\"slide-2-slider p-rel\" data-v-496214af>", "</div>", [_vm.banner.length > 0 ? [_c('VueSlickCarousel', _vm._b({
+  return _c('div', [_vm._ssrNode("<div class=\"slide-2-slider\">", "</div>", [_vm._ssrNode("<div class=\"health-slider p-rel\">", "</div>", [_vm.health.length > 0 ? [_c('VueSlickCarousel', _vm._b({
     ref: "slickBanner"
-  }, 'VueSlickCarousel', _vm.slickOptions, false), [_vm._l(_vm.involved, function (idata) {
+  }, 'VueSlickCarousel', _vm.slickOptions, false), [_vm._l(_vm.health, function (idata) {
     return [_c('div', {
       key: idata.id,
-      staticClass: "achi-slide",
-      style: {
-        backgroundImage: 'url(' + idata.image + ')'
+      staticClass: "health-slide-box cp"
+    }, [_c('div', {
+      staticClass: "health-slide-card"
+    }, [_c('div', {
+      staticClass: "health-card-img p-rel"
+    }, [_c('img', {
+      attrs: {
+        "src": idata.image
       }
-    }, [_c('div', {
-      staticClass: "slide-dex p-rel"
-    }, [_c('div', {
-      staticClass: "achi-main-box"
-    }, [_c('div', {
-      staticClass: "achi-heading"
-    }, [_vm._v("\n                                        " + _vm._s(idata.heading) + "\n                                    ")]), _vm._v(" "), _c('div', {
-      staticClass: "achi-desc"
-    }, [_vm._v("\n                                        " + _vm._s(idata.description) + "\n                                    ")])]), _vm._v(" "), _c('div', {
-      staticClass: "achi-bottom-btn-box"
-    }, [_c('div', {
-      staticClass: "achi-btn"
-    }, [_vm._v("\n                                        Read More\n                                    ")])])])])];
-  })], 2), _vm._ssrNode(" <button type=\"button\" data-role=\"none\" class=\"slick-prev slick-arrow achi-arrow-left\" data-v-496214af><i class=\"fas fa-arrow-left\" data-v-496214af></i></button> <button type=\"button\" data-role=\"none\" class=\"slick-next slick-arrow achi-arrow-right\" data-v-496214af><i class=\"fas fa-arrow-right\" data-v-496214af></i></button>")] : _vm._e()], 2)])]);
+    }), _vm._v(" "), _c('h4', {
+      staticClass: "health-img-heading"
+    }, [_vm._v(_vm._s(idata.heading))])])])])];
+  })], 2), _vm._ssrNode(" <div class=\"p-rel\" style=\"height:50px;\"><button type=\"button\" data-role=\"none\" class=\"slick-prev slick-arrow health-slide-arrow-left\"><i class=\"far fa-arrow-alt-circle-left\"></i></button> <button type=\"button\" data-role=\"none\" class=\"slick-next slick-arrow helath-slide-arrow-right\"><i class=\"far fa-arrow-alt-circle-right\"></i></button></div>")] : _vm._e()], 2)])]);
 };
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./components/FullScreenSlider.vue?vue&type=template&id=496214af&scoped=true&
+// CONCATENATED MODULE: ./components/LeftSlider.vue?vue&type=template&id=e2a9833c&
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/FullScreenSlider.vue?vue&type=script&lang=js&
-/* harmony default export */ var FullScreenSlidervue_type_script_lang_js_ = ({
-  name: "FullScreenSlider",
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/LeftSlider.vue?vue&type=script&lang=js&
+//import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+/* harmony default export */ var LeftSlidervue_type_script_lang_js_ = ({
+  name: "LeftSlider",
 
   data() {
     return {
@@ -117,65 +69,25 @@ var staticRenderFns = [];
         name: '',
         image: 'https://dummyimage.com/370x450/000/fff'
       }],
-      involved: [{
+      health: [{
         id: 1,
         heading: 'Tree Plantation',
-        image: "https://dummyimage.com/400x480/000/404040",
+        image: "https://dummyimage.com/608x350/000/fff",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
       }, {
         id: 2,
         heading: 'Organic Vilage',
-        image: "https://dummyimage.com/400x480/000/404040",
+        image: "https://dummyimage.com/608x350/000/fff",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
       }, {
         id: 3,
         heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
+        image: "https://dummyimage.com/608x350/000/fff",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
       }, {
         id: 4,
         heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 5,
-        heading: 'Tree Plantation',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 6,
-        heading: 'Organic Vilage',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 7,
-        heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 8,
-        heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 9,
-        heading: 'Tree Plantation',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 10,
-        heading: 'Organic Vilage',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 11,
-        heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-      }, {
-        id: 12,
-        heading: 'Lake Restoration',
-        image: "https://dummyimage.com/400x480/000/404040",
+        image: "https://dummyimage.com/608x350/000/fff",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
       }],
       slickOptions: {
@@ -187,22 +99,24 @@ var staticRenderFns = [];
         draggable: true,
         pauseOnHover: true,
         swipe: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [{
           breakpoint: 1024,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: false,
+            arrows: false
           }
         }, {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: false
+            dots: false,
+            arrows: false
           }
         }]
       }
@@ -354,38 +268,33 @@ var staticRenderFns = [];
 
   }
 });
-// CONCATENATED MODULE: ./components/FullScreenSlider.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_FullScreenSlidervue_type_script_lang_js_ = (FullScreenSlidervue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./components/LeftSlider.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_LeftSlidervue_type_script_lang_js_ = (LeftSlidervue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./components/FullScreenSlider.vue
+// CONCATENATED MODULE: ./components/LeftSlider.vue
 
 
 
-function injectStyles (context) {
-  
-  var style0 = __webpack_require__(131)
-if (style0.__inject__) style0.__inject__(context)
 
-}
 
 /* normalize component */
 
 var component = Object(componentNormalizer["a" /* default */])(
-  components_FullScreenSlidervue_type_script_lang_js_,
+  components_LeftSlidervue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
-  injectStyles,
-  "496214af",
-  "3621c87e"
+  null,
+  null,
+  "54aa792a"
   
 )
 
-/* harmony default export */ var FullScreenSlider = __webpack_exports__["default"] = (component.exports);
+/* harmony default export */ var LeftSlider = __webpack_exports__["default"] = (component.exports);
 
 /***/ })
 
 };;
-//# sourceMappingURL=full-screen-slider.js.map
+//# sourceMappingURL=left-slider.js.map

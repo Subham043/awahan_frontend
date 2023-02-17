@@ -1,56 +1,44 @@
 <template>
     <div>
-       
-        <template>
-            <div class="multi-slider-main">
-                <template v-if="banner.length>0">
+        <div class="slide-2-slider">
+            <div class="health-slider p-rel">
+                <template v-if="health.length>0">
                     <VueSlickCarousel v-bind="slickOptions" ref="slickBanner">
-                            <template v-for="(item, i) in banner" >
-                                <div class="slide-box" :key="i">
-                                    <div class="slide-box-collsp" >
-                                        <img  :src="item.image" class="w-100 " />
-                                        <div class="slide-heading-box">
-                                            <h4>Health</h4>
-                                            <p>Lorem Ipsum is simply dummy text of the printing</p>
-                                        </div>
-                                        <div class="middle">
-                                            <div class="middle-box">
-                                                <h3>Help us to educate</h3>
-                                                <p>Lorem Ipsum is simply dummy text of the printing. 
-                                                   Lorem Ipsum is simply dummy text of the printing.
-                                                </p>
-                                            </div>
-                                          </div>
+                        <template v-for="idata in health">
+                        
+                            <div class="health-slide-box cp" :key="idata.id">
+                                <div class="health-slide-card">
+                                    <div class="health-card-img p-rel">
+                                        <img :src="idata.image" />
+                                        <h4 class="health-img-heading">{{ idata.heading }}</h4>
                                     </div>
+                                    
                                 </div>
-                               
-                                
-                            </template>
-                            
-                    </VueSlickCarousel>
-                    <button type="button" data-role="none" class="slick-prev slick-arrow multi-slider-left" style="" @click="prevNavClick">
-                        <i class="far fa-arrow-alt-circle-left"></i>
-                    </button>
-                    <button type="button" data-role="none" class="slick-next slick-arrow multi-slider-right" style="" @click="nextNavClick">
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                    </button>
-                   
-                </template>
-               
-                   
-               
-                
+                            </div>
+                        </template>
+                    </VueSlickCarousel>    
+                    
+                    <div class="p-rel" style="height:50px;">
+                        <button type="button" data-role="none" class="slick-prev slick-arrow health-slide-arrow-left" style="" @click="prevNavClick">
+                            <i class="far fa-arrow-alt-circle-left"></i>
+                        </button>
+                        <button type="button" data-role="none" class="slick-next slick-arrow helath-slide-arrow-right" style="" @click="nextNavClick">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </button>
+                    </div>
+                    
+
+                </template>    
             </div>
-        </template>
-    
+        </div>
     </div>
 </template>
 
 <script>
 
-
+//import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
-    name: "MultiSlide",
+    name: "LeftSlider",
     
     data() {
         return {
@@ -62,6 +50,12 @@ export default {
                 {id:2, name:'', image:'https://dummyimage.com/370x450/000/fff'},
                 {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
             ],
+            health:[
+                {id:1, heading:'Tree Plantation',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+            ],
             slickOptions: {
                 arrows: false,
                 dots: false,
@@ -71,16 +65,17 @@ export default {
                 draggable: true,
                 pauseOnHover: true,
                 swipe: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 responsive: [
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
                             infinite: true,
                             dots: false,
+                            arrows: false,
                         },
                     },
                     {
@@ -89,6 +84,7 @@ export default {
                             slidesToShow: 1,
                             slidesToScroll: 1,
                             dots: false,
+                            arrows: false,
                         },
                     },
                 ],
@@ -226,11 +222,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-.slide-box{
-    padding: 0px 14px !important;
-    
-}
-
-</style>

@@ -1,26 +1,47 @@
 <template>
     <div>
-        <div class="slide-2-slider">
+        <div class="container-fluid">
+            <div class="slide-2-slider p-rel">
                 <template v-if="banner.length>0">
                     <VueSlickCarousel v-bind="slickOptions" ref="slickBanner">
                         <template v-for="idata in involved">
                         
-                            <div class="achi-">
+                            <div class="achi-slide " :style="{ backgroundImage: 'url(' + idata.image + ')' }"  :key="idata.id">
+                                <div class="slide-dex p-rel"  >
+                                    <div class="achi-main-box">
+                                        <div class="achi-heading">
+                                            {{ idata.heading }}
+                                        </div>
+                                        <div class="achi-desc">
+                                            {{ idata.description }}
+                                        </div>
+                                    </div>
 
+                                    <div class="achi-bottom-btn-box">
+                                        <div class="achi-btn">
+                                            Read More
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
                             </div>
                           
                         </template>
                     </VueSlickCarousel>    
 
-                    <!-- <button type="button" data-role="none" class="slick-prev slick-arrow two-slide-arrow-left" style="" @click="prevNavClick">
-                        <i class="far fa-arrow-alt-circle-left"></i>
+                    <button type="button" data-role="none" class="slick-prev slick-arrow achi-arrow-left" style="" @click="prevNavClick">
+                        <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button type="button" data-role="none" class="slick-next slick-arrow two-slide-arrow-right" style="" @click="nextNavClick">
-                        <i class="far fa-arrow-alt-circle-right"></i>
-                    </button> -->
+                    <button type="button" data-role="none" class="slick-next slick-arrow achi-arrow-right" style="" @click="nextNavClick">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
 
                 </template>    
-            </div>
+        </div>
+        </div>
+       
     </div>
 </template>
 
@@ -28,7 +49,7 @@
 
 
 export default {
-    name: "MultiSlide",
+    name: "FullScreenSlider",
     
     data() {
         return {
@@ -41,10 +62,18 @@ export default {
                 {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
             ],
             involved:[
-                {id:1, heading:'Tree Plantation',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:2, heading:'Organic Vilage',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:3, heading:'Lake Restoration',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:4, heading:'Lake Restoration',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:1, heading:'Tree Plantation',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:5, heading:'Tree Plantation',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:6, heading:'Organic Vilage',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:7, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:8, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:9, heading:'Tree Plantation',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:10, heading:'Organic Vilage',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:11, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:12, heading:'Lake Restoration',image:"https://dummyimage.com/400x480/000/404040",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             slickOptions: {
                 arrows: false,
@@ -55,14 +84,14 @@ export default {
                 draggable: true,
                 pauseOnHover: true,
                 swipe: true,
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 4,
+                slidesToScroll: 4,
                 responsive: [
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
                             infinite: true,
                             dots: false,
                         },
@@ -210,3 +239,11 @@ export default {
 }
 
 </script>
+
+<style scoped>
+
+.container-fluid {
+    padding:unset !important;
+}
+
+</style>

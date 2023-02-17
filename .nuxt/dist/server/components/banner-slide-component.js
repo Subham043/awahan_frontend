@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 139:
+/***/ 145:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39,7 +39,7 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./components/BannerSlideComponent.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_BannerSlideComponentvue_type_script_lang_js_ = (BannerSlideComponentvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(5);
+var componentNormalizer = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./components/BannerSlideComponent.vue
 

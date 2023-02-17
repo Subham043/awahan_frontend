@@ -49,7 +49,7 @@
 
 
 export default {
-    name: "MultiSlide",
+    name: "TwoSlideSlider",
     
     data() {
         return {
