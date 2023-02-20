@@ -51,10 +51,10 @@ export default {
                 {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
             ],
             health:[
-                {id:1, heading:'Tree Plantation',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:2, heading:'Organic Vilage',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:3, heading:'Lake Restoration',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:4, heading:'Lake Restoration',image:"https://dummyimage.com/608x350/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:1, heading:'Tree Plantation',image:"/images/c1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/c5.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/c3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"/images/c4.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             slickOptions: {
                 arrows: false,

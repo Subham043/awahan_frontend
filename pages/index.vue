@@ -132,7 +132,7 @@
 
         <!--- start health section--->
         <section class="container-fluid p-unset health-sec">
-            <div class="health-bg" :style="{ backgroundImage: 'url(https://dummyimage.com/640x280/000/fff)' }">
+            <div class="health-bg" :style="{ backgroundImage: 'url(/images/c6.png)' }">
 
                 <div class="row health-row m-unset">
                     <div class="col-md-6 col-health">
@@ -218,8 +218,7 @@
                 </div>
 
                 <div class="row">
-                    <template v-for="edata in environment" >
-                        <div class="col-md-4" :key="edata.id">
+                        <div class="col-md-4" v-for="edata in environment" :key="edata.id">
                             <div class="env-card">
                                 <div class="env-card-body">
                                     <div class="env-image-card">
@@ -236,7 +235,6 @@
                                 </div>
                             </div>
                         </div>
-                    </template>
                    
                 </div>
             </div>
@@ -349,7 +347,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="video-thumbnails p-rel">
-                                <img src="https://dummyimage.com/800x500/000/fff">
+                                <img src="/images/video.png">
                                 <div class="play-btn-area">
                                     <i class="fas fa-play"></i>
                                 </div>
@@ -454,31 +452,31 @@ export default {
                 { id: 3, name: "", image: "b3.jpg" },
             ],
             environment: [
-                { id: 1, heading: "Tree Plantation", image: "https://dummyimage.com/390x220/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 2, heading: "Organic Vilage", image: "https://dummyimage.com/390x220/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: "Lake Restoration", image: "https://dummyimage.com/390x220/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: "Tree Plantation", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 2, heading: "Organic Vilage", image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 3, heading: "Lake Restoration", image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             involved: [
-                { id: 1, heading: "Tree Plantation", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: "Tree Plantation", image: "/images/banner/b1.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 2, heading: "Organic Vilage", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 3, heading: "Lake Restoration", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 4, heading: "Lake Restoration", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             videos: [
-                { id: 1, heading: "Tree Plantation", image: "https://dummyimage.com/440x250/000/fff",  },
-                { id: 2, heading: "Organic Vilage", image: "https://dummyimage.com/440x250/000/fff",  },
-                { id: 3, heading: "Lake Restoration", image: "https://dummyimage.com/440x250/000/fff", },
-                { id: 4, heading: "Lake Restoration", image: "https://dummyimage.com/440x250/000/fff",  },
+                { id: 1, heading: "Tree Plantation", image: "/images/vv1.png",  },
+                { id: 2, heading: "Organic Vilage", image: "/images/vv2.jpg",  },
+                { id: 3, heading: "Lake Restoration", image: "/images/vv3.jpg", },
+                { id: 4, heading: "Lake Restoration", image: "/images/vv4.jpg",  },
             ],
             products: [
-                { id: 1, heading: "Product 1", image: "https://dummyimage.com/440x250/fff/000", price:'250' },
-                { id: 2, heading: "Product 2", image: "https://dummyimage.com/440x250/fff/000", price:'450' },
-                { id: 3, heading: "Product 3", image: "https://dummyimage.com/440x250/fff/000", price:'350' },
-                { id: 4, heading: "Product 4", image: "https://dummyimage.com/440x250/fff/000", price:'650'  },
-                { id: 5, heading: "Product 5", image: "https://dummyimage.com/440x250/fff/000", price:'250' },
-                { id: 6, heading: "Product 6", image: "https://dummyimage.com/440x250/fff/000", price:'450' },
-                { id: 7, heading: "Product 7", image: "https://dummyimage.com/440x250/fff/000", price:'350' },
-                { id: 8, heading: "Product 8", image: "https://dummyimage.com/440x250/fff/000", price:'650'  },
+                { id: 1, heading: "Product 1", image: "/images/vv1.png", price:'250' },
+                { id: 2, heading: "Product 2", image: "/images/vv2.jpg", price:'450' },
+                { id: 3, heading: "Product 3", image: "/images/vv3.jpg", price:'350' },
+                { id: 4, heading: "Product 4", image: "/images/vv4.jpg", price:'650'  },
+                { id: 5, heading: "Product 5", image: "/images/vv5.png", price:'250' },
+                { id: 6, heading: "Product 6", image: "/images/vv6.png", price:'450' },
+                { id: 7, heading: "Product 7", image: "/images/vv1.png", price:'350' },
+                { id: 8, heading: "Product 8", image: "/images/vv3.jpg", price:'650'  },
             ],
             galleryImages: [],
             videoBannerImage: "",
@@ -596,10 +594,6 @@ export default {
         if (process.client) {
             this.$scrollTo("#__nuxt", 0, { force: true });
         }
-        // this.getBlogs();
-        // this.getBanners();
-        // this.getVideoBanner();
-        // this.getGalleryImages();
 
 
         const script = document.createElement("script");
@@ -619,129 +613,6 @@ export default {
         },
         prevNavClickVideo() {
             this.$refs.VideoSlides.prev();
-        },
-        async getBlogs() {
-            this.loading = true;
-            try {
-                const response = await this.$axios.get("https://hrudayaspandana.org/blog/wp-json/wp/v2/posts");
-                this.blogs = response.data;
-                // console.log(this.blogs);
-            }
-            catch (e) {
-            }
-            finally {
-                this.loading = false;
-            }
-        },
-        async formHandler() {
-            const loading = this.$loading({
-                lock: true,
-                fullscreen: true,
-            });
-            try {
-                const formData = {
-                    "name": this.name,
-                    "email": this.email,
-                    "phone": this.phone,
-                    "ebook": this.ebook,
-                    "event": this.event,
-                    "blog": this.blog,
-                    "crossword": this.crossword,
-                    "newsletter": this.newsletter,
-                };
-                const response = await this.$publicApi.post("/api/subscription/create", formData); // eslint-disable-line
-                this.$toast.success("Subscribed successfully");
-                this.name = "";
-                this.email = "";
-                this.phone = "";
-                this.ebook = false;
-                this.event = false;
-                this.blog = false;
-                this.crossword = false;
-                this.newsletter = false;
-                this.$refs.form.reset();
-            }
-            catch (err) {
-                // console.log(err.response);// eslint-disable-line
-                this.$refs.form.setErrors({
-                    name: err?.response?.data?.errors?.name,
-                    email: err?.response?.data?.errors?.email,
-                    phone: err?.response?.data?.errors?.phone,
-                    ebook: err?.response?.data?.errors?.ebook,
-                    event: err?.response?.data?.errors?.event,
-                    blog: err?.response?.data?.errors?.blog,
-                    crossword: err?.response?.data?.errors?.crossword,
-                    newsletter: err?.response?.data?.errors?.newsletter,
-                });
-                if (err?.response?.data?.message)
-                    this.$toast.error(err?.response?.data?.message);
-                if (err?.response?.data?.error)
-                    this.$toast.error(err?.response?.data?.error);
-            }
-            finally {
-                loading.close();
-            }
-        },
-        async getBanners() {
-            const loading = this.$loading({
-                lock: true,
-                fullscreen: true,
-            });
-            try {
-                const response = await this.$publicApi.get("/api/banner/random"); // eslint-disable-line
-                this.banner = response.data.data;
-            }
-            catch (err) {
-                // console.log(err.response);// eslint-disable-line
-                if (err?.response?.data?.message)
-                    this.$toast.error(err?.response?.data?.message);
-                if (err?.response?.data?.error)
-                    this.$toast.error(err?.response?.data?.error);
-            }
-            finally {
-                loading.close();
-            }
-        },
-        async getGalleryImages() {
-            const loading = this.$loading({
-                lock: true,
-                fullscreen: true,
-            });
-            try {
-                const response = await this.$publicApi.get("/api/gallery-image/random"); // eslint-disable-line
-                this.galleryImages = response.data.data;
-            }
-            catch (err) {
-                // console.log(err.response);// eslint-disable-line
-                if (err?.response?.data?.message)
-                    this.$toast.error(err?.response?.data?.message);
-                if (err?.response?.data?.error)
-                    this.$toast.error(err?.response?.data?.error);
-            }
-            finally {
-                loading.close();
-            }
-        },
-        async getVideoBanner() {
-            const loading = this.$loading({
-                lock: true,
-                fullscreen: true,
-            });
-            try {
-                const response = await this.$publicApi.get("/api/banner-video/display"); // eslint-disable-line
-                this.videoBannerImage = response.data.data.image;
-                this.videoBannerVideo = response.data.data.video;
-            }
-            catch (err) {
-                // console.log(err.response);// eslint-disable-line
-                if (err?.response?.data?.message)
-                    this.$toast.error(err?.response?.data?.message);
-                if (err?.response?.data?.error)
-                    this.$toast.error(err?.response?.data?.error);
-            }
-            finally {
-                loading.close();
-            }
         },
     },
     components: { TwoSlideSlider }

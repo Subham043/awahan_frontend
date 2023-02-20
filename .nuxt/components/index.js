@@ -1,11 +1,11 @@
-export const BannerSlideComponent = () => import('../..\\components\\BannerSlideComponent.vue' /* webpackChunkName: "components/banner-slide-component" */).then(c => wrapFunctional(c.default || c))
-export const CounterLayout = () => import('../..\\components\\CounterLayout.vue' /* webpackChunkName: "components/counter-layout" */).then(c => wrapFunctional(c.default || c))
-export const Footer = () => import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const FullScreenSlider = () => import('../..\\components\\FullScreenSlider.vue' /* webpackChunkName: "components/full-screen-slider" */).then(c => wrapFunctional(c.default || c))
-export const Header = () => import('../..\\components\\Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
-export const LeftSlider = () => import('../..\\components\\LeftSlider.vue' /* webpackChunkName: "components/left-slider" */).then(c => wrapFunctional(c.default || c))
-export const MultiSlideComponent = () => import('../..\\components\\MultiSlideComponent.vue' /* webpackChunkName: "components/multi-slide-component" */).then(c => wrapFunctional(c.default || c))
-export const TwoSlideSlider = () => import('../..\\components\\TwoSlideSlider.vue' /* webpackChunkName: "components/two-slide-slider" */).then(c => wrapFunctional(c.default || c))
+export { default as BannerSlideComponent } from '../../components/BannerSlideComponent.vue'
+export { default as CounterLayout } from '../../components/CounterLayout.vue'
+export { default as Footer } from '../../components/Footer.vue'
+export { default as FullScreenSlider } from '../../components/FullScreenSlider.vue'
+export { default as Header } from '../../components/Header.vue'
+export { default as LeftSlider } from '../../components/LeftSlider.vue'
+export { default as MultiSlideComponent } from '../../components/MultiSlideComponent.vue'
+export { default as TwoSlideSlider } from '../../components/TwoSlideSlider.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

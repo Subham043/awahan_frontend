@@ -62,10 +62,10 @@ export default {
                 {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
             ],
             involved:[
-                {id:1, heading:'Tree Plantation',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:2, heading:'Organic Vilage',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:3, heading:'Lake Restoration',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:4, heading:'Lake Restoration',image:"https://dummyimage.com/608x280/000/fff",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:1, heading:'Tree Plantation',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             slickOptions: {
                 arrows: false,

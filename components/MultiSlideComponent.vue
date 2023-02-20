@@ -55,12 +55,12 @@ export default {
     data() {
         return {
             banner: [
-                {id:1, name:'', image:'https://dummyimage.com/370x450/000/fff'},
-                {id:2, name:'', image:'https://dummyimage.com/370x450/000/fff'},
-                {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
-                {id:1, name:'', image:'https://dummyimage.com/370x450/000/fff'},
-                {id:2, name:'', image:'https://dummyimage.com/370x450/000/fff'},
-                {id:3, name:'', image:'https://dummyimage.com/370x450/000/fff'},
+                {id:1, name:'', image:'/images/r1.png'},
+                {id:2, name:'', image:'/images/r2.png'},
+                {id:3, name:'', image:'/images/r3.png'},
+                {id:1, name:'', image:'/images/t1.png'},
+                {id:2, name:'', image:'/images/t2.png'},
+                {id:3, name:'', image:'/images/t3.png'},
             ],
             slickOptions: {
                 arrows: false,

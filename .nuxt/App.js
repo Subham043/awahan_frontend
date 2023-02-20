@@ -4,24 +4,25 @@ import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } fr
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
+import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
 
-import '..\\node_modules\\element-ui\\lib\\theme-chalk\\index.css'
+import '../node_modules/element-ui/lib/theme-chalk/index.css'
 
-import '..\\static\\css\\bootstrap.min.css'
+import '../static/css/bootstrap.min.css'
 
-import '..\\static\\css\\style.css'
+import '../static/css/style.css'
 
-import '..\\static\\css\\responsive.css'
+import '../static/css/responsive.css'
 
-import '..\\static\\css\\header.css'
+import '../static/css/header.css'
 
-import '..\\static\\css\\footer.css'
+import '../static/css/footer.css'
 
-import '..\\node_modules\\vue-toastification\\dist\\index.css'
+import '../node_modules/vue-toastification/dist/index.css'
 
-import _04bbe2c8 from '..\\layouts\\MainPageLayout.vue'
+import _04bbe2c8 from '../layouts/MainPageLayout.vue'
 import _6f6c098b from './layouts/default.vue'
 
 const layouts = { "_MainPageLayout": sanitizeComponent(_04bbe2c8),"_default": sanitizeComponent(_6f6c098b) }
@@ -59,7 +60,7 @@ export default {
       }
     }, [
       loadingEl,
-
+      h(NuxtBuildIndicator),
       transitionEl
     ])
   },
@@ -195,6 +196,10 @@ export default {
     },
 
     setLayout (layout) {
+      if(layout && typeof layout !== 'string') {
+        throw new Error('[nuxt] Avoid using non-string value as layout property.')
+      }
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
