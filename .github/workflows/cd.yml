@@ -16,10 +16,11 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.PRIVATE_KEY }}
+        # key: ${{ secrets.PRIVATE_KEY }}
+        password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          sudo su
+          whoami
           cd /var/www/awahan/
           sudo docker-compose down
           sudo git add .
