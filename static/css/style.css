@@ -2445,6 +2445,7 @@ img{
 .achi-slide{
     background-repeat: no-repeat;
     width: 100%;
+    background-size: cover;
 }
 .achi-slide .slide-dex{
     height: 420px;

@@ -13,7 +13,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_fd0ac988 from 'nuxt_plugin_plugin_fd0ac988' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_toast_8561e5fe from 'nuxt_plugin_toast_8561e5fe' // Source: ./toast.js (mode: 'client')
 import nuxt_plugin_vuescrollto_024ca577 from 'nuxt_plugin_vuescrollto_024ca577' // Source: ./vue-scrollto.js (mode: 'client')
 import nuxt_plugin_workbox_b37f2e24 from 'nuxt_plugin_workbox_b37f2e24' // Source: ./workbox.js (mode: 'client')
@@ -225,10 +224,6 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
-
-  if (typeof nuxt_plugin_plugin_fd0ac988 === 'function') {
-    await nuxt_plugin_plugin_fd0ac988(app.context, inject)
-  }
 
   if (process.client && typeof nuxt_plugin_toast_8561e5fe === 'function') {
     await nuxt_plugin_toast_8561e5fe(app.context, inject)

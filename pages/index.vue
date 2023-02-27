@@ -76,7 +76,7 @@
                     </div>
                 </div>
 
-                <MultiSlideComponent></MultiSlideComponent>
+                <MultiSlideComponent :data="multi_slide_data" />
                 
             </div>
            
@@ -126,7 +126,7 @@
 
         <!---start counter section-->
         <section class="container-fluid p-unset counter-sec">
-            <CounterLayout />
+            <CounterComponent :data="counter_data" />
         </section>
         <!---end counter section-->
 
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="col-md-6 col-health">
-                        <LeftSlider />
+                        <LeftSlider :data="left_slider_data"/>
                     </div>
                 </div>
                 
@@ -201,7 +201,7 @@
                     </div>
                 </div>
 
-                <MultiSlideComponent></MultiSlideComponent>
+                <MultiSlideComponent :data="multi_slide_data" />
                 
             </div>
            
@@ -253,7 +253,7 @@
                     </div>
                 </div>
 
-                <TwoSlideSlider></TwoSlideSlider>
+                <TwoSlideSlider :data="two_slider_data" />
                 
 
             </div>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
 
-                <MultiSlideComponent></MultiSlideComponent>
+                <MultiSlideComponent :data="multi_slide_data" />
                 
             </div>
            
@@ -308,10 +308,7 @@
                 </div>
             </div>
             
-                <FullScreenSlider></FullScreenSlider>
-           
-           
-
+            <FullScreenSlider :data="full_screen_slider_data" />
         </section>
         <!---End Achievements Section--->  
 
@@ -429,6 +426,10 @@
 </template>
 
 <script>
+import CounterComponent from '~/components/CounterComponent.vue';
+import FullScreenSlider from '~/components/FullScreenSlider.vue';
+import LeftSlider from '~/components/LeftSlider.vue';
+import MultiSlideComponent from '~/components/MultiSlideComponent.vue';
 import TwoSlideSlider from '~/components/TwoSlideSlider.vue';
 
 
@@ -438,14 +439,46 @@ export default {
     layout: "MainPageLayout",
     data() {
         return {
-            name: "",
-            email: "",
-            phone: "",
-            ebook: false,
-            event: false,
-            newsletter: false,
-            crossword: false,
-            blog: false,
+            left_slider_data:[
+                {id:1, heading:'Tree Plantation',image:"/images/c1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/c5.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/c3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"/images/c4.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+            ],
+            full_screen_slider_data:[
+                {id:1, heading:'Tree Plantation',image:"/images/r1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/r2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/r3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"/images/t1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:5, heading:'Tree Plantation',image:"/images/t2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:6, heading:'Organic Vilage',image:"/images/t3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:7, heading:'Lake Restoration',image:"/images/t4.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:8, heading:'Lake Restoration',image:"/images/r1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:9, heading:'Tree Plantation',image:"/images/r2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:10, heading:'Organic Vilage',image:"/images/r3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:11, heading:'Lake Restoration',image:"/images/t1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:12, heading:'Lake Restoration',image:"/images/t2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+            ],
+            multi_slide_data: [
+                {id:1, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/r1.png'},
+                {id:2, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/r2.png'},
+                {id:3, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/r3.png'},
+                {id:4, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/t1.png'},
+                {id:5, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/t2.png'},
+                {id:6, title:'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image:'/images/t3.png'},
+            ],
+            counter_data: [
+                {id: 1, title: 'Successfully Projects', counter: 1043},
+                {id: 2, title: 'Successfully Projects', counter: 1043},
+                {id: 3, title: 'Successfully Projects', counter: 1043},
+                {id: 4, title: 'Successfully Projects', counter: 1043},
+            ],
+            two_slider_data:[
+                {id:1, heading:'Tree Plantation',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+            ],
             banner: [
                 { id: 1, name: "", image: "logo.png" },
                 { id: 2, name: "", image: "b2.jpg" },
@@ -455,12 +488,6 @@ export default {
                 { id: 1, heading: "Tree Plantation", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 2, heading: "Organic Vilage", image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 3, heading: "Lake Restoration", image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-            ],
-            involved: [
-                { id: 1, heading: "Tree Plantation", image: "/images/banner/b1.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 2, heading: "Organic Vilage", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: "Lake Restoration", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 4, heading: "Lake Restoration", image: "https://dummyimage.com/640x280/000/fff", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             videos: [
                 { id: 1, heading: "Tree Plantation", image: "/images/vv1.png",  },
@@ -478,12 +505,6 @@ export default {
                 { id: 7, heading: "Product 7", image: "/images/vv1.png", price:'350' },
                 { id: 8, heading: "Product 8", image: "/images/vv3.jpg", price:'650'  },
             ],
-            galleryImages: [],
-            videoBannerImage: "",
-            videoBannerVideo: "",
-            dialogFormVisible: false,
-            blogs: [],
-            loading: false,
             slickOptions: {
                 arrows: false,
                 dots: false,
@@ -615,67 +636,6 @@ export default {
             this.$refs.VideoSlides.prev();
         },
     },
-    components: { TwoSlideSlider }
+    components: { TwoSlideSlider, MultiSlideComponent, CounterComponent, LeftSlider, FullScreenSlider }
 }
 </script>
-
-<style scoped>
-.error {
-    color: red !important;
-}
-
-.viewMoreBtn {
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-    color: #ffaa49;
-    font-weight: 700;
-}
-
-.viewMoreBtn:hover {
-    text-decoration: underline;
-}
-
-.tata {
-    z-index: 99999999 !important;
-}
-
-#certification p {
-    margin-left: 15px;
-}
-
-.moretext {
-    display: none;
-}
-
-.blog2 {
-    display: none;
-}
-
-.blog3 {
-    display: none;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.about .about-row .col-3-about .about-card h4 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.text-hidden-3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    /* number of lines to show */
-    line-clamp: 6;
-    -webkit-box-orient: vertical;
-}
-
-.slider-div-box{
-    position: relative;
-}
-</style>
