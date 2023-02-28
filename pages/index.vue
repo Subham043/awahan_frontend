@@ -7,13 +7,7 @@
                     <div class="regular slider">
                         <template v-if="banner.length>0">
                             <VueSlickCarousel v-bind="slickOptions" ref="slickBanner">
-                                    <!-- <template v-for="(item, i) in banner" > -->
-                                        <img  src="../static/images/banner/b1.jpg" class="w-100" />  
-                                        <img  src="../static/images/banner/b2.jpg" class="w-100" />    
-                                        <img  src="../static/images/banner/b3.jpg" class="w-100" />      
-                                     
-                                    <!-- </template> -->
-                                
+                                        <img v-for="(item, i) in banner" :key="i"  :src="item.image" class="w-100" />  
                             </VueSlickCarousel>
                         </template>
                         <div>
@@ -59,7 +53,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="../static/images/about/about.jpg" class="w-100" />
+                            <img src="/images/about/about.jpg" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -112,7 +106,7 @@
 
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="../static/images/about/about.jpg" class="w-100" />
+                            <img src="/images/about/about.jpg" class="w-100" />
                         </div>
                     </div>
                     
@@ -184,7 +178,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="../static/images/about/about.jpg" class="w-100" />
+                            <img src="/images/about/about.jpg" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -271,7 +265,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="../static/images/about/about.jpg" class="w-100" />
+                            <img src="/images/about/about.jpg" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -480,9 +474,9 @@ export default {
                 {id:4, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             banner: [
-                { id: 1, name: "", image: "logo.png" },
-                { id: 2, name: "", image: "b2.jpg" },
-                { id: 3, name: "", image: "b3.jpg" },
+                { id: 1, name: "", image: "/images/banner/b1.jpg" },
+                { id: 2, name: "", image: "/images/banner/b2.jpg" },
+                { id: 3, name: "", image: "/images/banner/b3.jpg" },
             ],
             environment: [
                 { id: 1, heading: "Tree Plantation", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
@@ -614,13 +608,13 @@ export default {
         // eslint-disable-next-line nuxt/no-env-in-hooks
         if (process.client) {
             this.$scrollTo("#__nuxt", 0, { force: true });
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = 'https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=418950909';
+            document.body.appendChild(script);
         }
 
 
-        const script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = 'https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=418950909';
-        document.body.appendChild(script);
     },
     methods: {
         nextNavClick() {

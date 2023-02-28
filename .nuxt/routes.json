@@ -1,5 +1,12 @@
 [
   {
+    "name": "products",
+    "path": "/products",
+    "component": "/Users/subham/Documents/awahan/pages/products/index.vue",
+    "chunkName": "pages/products/index",
+    "_name": "_0529c25d"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/subham/Documents/awahan/pages/index.vue",
