@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/about/about.jpg" class="w-100" />
+                            <img src="/images/abt_4.jpg" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -106,7 +106,7 @@
 
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/about/about.jpg" class="w-100" />
+                            <img src="/images/abt_2.jpg" class="w-100" />
                         </div>
                     </div>
                     
@@ -126,7 +126,7 @@
 
         <!--- start health section--->
         <section class="container-fluid p-unset health-sec">
-            <div class="health-bg" :style="{ backgroundImage: 'url(/images/c6.png)' }">
+            <div class="health-bg" :style="`backgroundImage: url('/images/bnr_1.png'); background-position:center center; `">
 
                 <div class="row health-row m-unset">
                     <div class="col-md-6 col-health">
@@ -434,10 +434,9 @@ export default {
     data() {
         return {
             left_slider_data:[
-                {id:1, heading:'Tree Plantation',image:"/images/c1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:2, heading:'Organic Vilage',image:"/images/c5.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:3, heading:'Lake Restoration',image:"/images/c3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:4, heading:'Lake Restoration',image:"/images/c4.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:1, heading:'Tree Plantation',image:"/images/b3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/b2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/b1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             full_screen_slider_data:[
                 {id:1, heading:'Tree Plantation',image:"/images/r1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
@@ -468,10 +467,9 @@ export default {
                 {id: 4, title: 'Successfully Projects', counter: 1043},
             ],
             two_slider_data:[
-                {id:1, heading:'Tree Plantation',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:2, heading:'Organic Vilage',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:3, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
-                {id:4, heading:'Lake Restoration',image:"/images/tree_plantation.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:1, heading:'Tree Plantation',image:"/images/b3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:2, heading:'Organic Vilage',image:"/images/b2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:3, heading:'Lake Restoration',image:"/images/b1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             banner: [
                 { id: 1, name: "", image: "/images/banner/b1.jpg" },
@@ -479,9 +477,9 @@ export default {
                 { id: 3, name: "", image: "/images/banner/b3.jpg" },
             ],
             environment: [
-                { id: 1, heading: "Tree Plantation", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: "Tree Plantation", image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 2, heading: "Organic Vilage", image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: "Lake Restoration", image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 3, heading: "Lake Restoration", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             videos: [
                 { id: 1, heading: "Tree Plantation", image: "/images/vv1.png",  },

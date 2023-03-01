@@ -69,7 +69,7 @@ export default {
                 pauseOnHover: true,
                 swipe: true,
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 responsive: [
                     {
                         breakpoint: 1024,
