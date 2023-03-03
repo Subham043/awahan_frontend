@@ -24,6 +24,8 @@
 }
 .child-oneline{
     display: inline-block;
+    text-decoration: none;
+    color: #fff;
 }
 
 .oneline-div{
@@ -56,7 +58,7 @@
     padding: 24px 16px;
     text-decoration: none;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .topnav div {
     /* float: left; */

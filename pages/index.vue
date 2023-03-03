@@ -71,9 +71,8 @@
                 </div>
 
                 <MultiSlideComponent :data="multi_slide_data" />
-                
             </div>
-           
+            
 
         </section>
         <!---End About Section--->
@@ -112,6 +111,12 @@
                     
                 </div>
                 
+            </div>
+
+            <div class="grey-bg">
+                <div class="container">
+                    <ThreeGreySlideSlider :data="two_slider_data" />
+                </div>
             </div>
            
 
@@ -424,6 +429,7 @@ import CounterComponent from '~/components/CounterComponent.vue';
 import FullScreenSlider from '~/components/FullScreenSlider.vue';
 import LeftSlider from '~/components/LeftSlider.vue';
 import MultiSlideComponent from '~/components/MultiSlideComponent.vue';
+import ThreeGreySlideSlider from '~/components/ThreeGreySlideSlider.vue';
 import TwoSlideSlider from '~/components/TwoSlideSlider.vue';
 
 
@@ -470,6 +476,7 @@ export default {
                 {id:1, heading:'Tree Plantation',image:"/images/b3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
                 {id:2, heading:'Organic Vilage',image:"/images/b2.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
                 {id:3, heading:'Lake Restoration',image:"/images/b1.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
+                {id:4, heading:'Tree Plantation',image:"/images/b3.png",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"},
             ],
             banner: [
                 { id: 1, name: "", image: "/images/banner/b1.jpg" },
@@ -628,6 +635,6 @@ export default {
             this.$refs.VideoSlides.prev();
         },
     },
-    components: { TwoSlideSlider, MultiSlideComponent, CounterComponent, LeftSlider, FullScreenSlider }
+    components: { TwoSlideSlider, MultiSlideComponent, CounterComponent, LeftSlider, FullScreenSlider, ThreeGreySlideSlider }
 }
 </script>

@@ -42,7 +42,7 @@
                                             <i class="far fa-heart"></i>
                                         </div>
                                         <div class="quick-view-div">
-                                            <a href="">QUICK VIEW</a>
+                                            <NuxtLink :to="`/products/${index}`">QUICK VIEW</NuxtLink>
                                         </div>
                                     </div>
                                 </div>

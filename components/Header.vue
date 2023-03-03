@@ -16,9 +16,9 @@
                 <div class="col-md-6">
                     <div class="top-right-section">
                         <div class="oneline-div">
-                            <div class="child-oneline right-brd">
+                            <NuxtLink to="/donation" class="child-oneline right-brd">
                                 Donation
-                            </div>
+                            </NuxtLink>
                             <div class="child-oneline right-brd">
                                 login
                             </div>
@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
+            <NuxtLink to="/" class="active">Home</NuxtLink>
             <a href="#news">Covid-19</a>
             <a href="#contact">Our Journey</a>
             <a href="#contact">Our Programs</a>
             <a href="#about">Our Achievements</a>
-            <div><img src="~/static/images/logo/mobile-logo.png" width="70%"/></div>
-            <a href="#about">Products</a>
+            <NuxtLink to="/"><img src="~/static/images/logo/mobile-logo.png" width="70%"/></NuxtLink>
+            <NuxtLink to="/products">Products</NuxtLink>
             <a href="#about">Aahwahan Patrika</a>
             <a href="#about">Media Presence</a>
             <a href="#about">Our Forum</a>

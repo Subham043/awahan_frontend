@@ -14,6 +14,13 @@
     "_name": "_0529c25d"
   },
   {
+    "name": "products-id",
+    "path": "/products/:id",
+    "component": "/Users/subham/Documents/awahan/pages/products/_id.vue",
+    "chunkName": "pages/products/_id",
+    "_name": "_1e0eb805"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/subham/Documents/awahan/pages/index.vue",

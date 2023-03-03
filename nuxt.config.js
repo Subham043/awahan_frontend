@@ -26,6 +26,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/element-ui',
+    { src: '@/plugins/zoom-on-hover', mode: 'client' },
     '@/plugins/image_viewer',
     '~/plugins/validation-provider.js',
     '~/plugins/publicApi.js',

@@ -89,10 +89,6 @@ export default {
         if (process.client) {
             this.$scrollTo('#__nuxt', 0, { force: true })
         }
-        // this.getBlogs();
-        // this.getBanners();
-        // this.getVideoBanner();
-        // this.getGalleryImages();
     },
     methods: {
         nextNavClick() {
