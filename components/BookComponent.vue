@@ -406,6 +406,7 @@ export default {
     margin-right: auto;
     margin-left: auto;
     font-family: Georgia, Times, "Times New Roman", serif;
+    z-index: 999;
 }
 
 .page-text img {
