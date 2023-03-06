@@ -512,6 +512,7 @@ export default {
                 autoplaySpeed: 3000,
                 draggable: true,
                 pauseOnHover: true,
+                adaptiveHeight: true,
                 swipe: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
