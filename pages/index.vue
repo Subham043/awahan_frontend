@@ -76,9 +76,9 @@
 
         </section>
         <!---End About Section--->
-
+        
         <!---start Book--->
-        <a href="https://online.flippingbook.com/view/418950909/" class="fbo-embed" data-fbo-id="065d1636d2" data-fbo-ratio="4:2" data-fbo-lightbox="yes" data-fbo-width="100%" data-fbo-height="90vh" data-fbo-version="1" style="max-width: 100%">Types Of Education</a>
+        <BookComponent />
         <!-----end book-->
         
         <!---Start Donate Section--->
@@ -91,7 +91,7 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="about-content">
+                        <div class="about-content about-content-2">
                             <h3>We help around the world</h3>
                             <p>Aahwahan - is an NGO that is involved in promoting the welfare of the economically 
                                 backward sections of the society by generating employment across various sectors. 
@@ -113,7 +113,7 @@
                 
             </div>
 
-            <div class="grey-bg">
+            <div class="grey-bg mt-5">
                 <div class="container">
                     <ThreeGreySlideSlider :data="two_slider_data" />
                 </div>
@@ -124,7 +124,7 @@
         <!---End Donate Section--->
 
         <!---start counter section-->
-        <section class="container-fluid p-unset counter-sec">
+        <section class="container-fluid p-unset counter-sec my-4">
             <CounterComponent :data="counter_data" />
         </section>
         <!---end counter section-->
@@ -133,8 +133,8 @@
         <section class="container-fluid p-unset health-sec">
             <div class="health-bg" :style="`backgroundImage: url('/images/bnr_1.png'); background-position:center center; `">
 
-                <div class="row health-row m-unset">
-                    <div class="col-md-6 col-health">
+                <div class="row health-row m-unset align-items-center justify-content-between">
+                    <div class="col-md-5 offset-md-1 col-health">
                         <h2 class="health-heading">Health</h2>
 
                         <div class="health-description">
@@ -146,13 +146,13 @@
                                 the 1960s with the release of Letraset sheets containing Lorem
                             </p>
                             
-                            <div class="row">
-                                <div class="col-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
                                     <button class="health-left b-unset">
                                         Read More
                                     </button>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-auto">
                                     <button class="health-right b-unset">
                                         Donate Now
                                     </button>
@@ -171,6 +171,51 @@
             </div>
         </section>
         <!--- end health section--->
+
+         <!---Start Achievements Section--->
+         <section class="about-sec achievements">
+            <div class="container">
+                <h2><span class="heading-span-clr">Our</span> <span class="heading-2nd">Achievements</span></h2>
+                <div class="w-50">
+                    <hr role="tournament6" />
+                </div>
+            </div>
+            
+            <FullScreenSlider :data="full_screen_slider_data" />
+        </section>
+        <!---End Achievements Section--->  
+
+        <!---Start Enviroment Section--->
+        <section class="about-sec environment">
+            <div class="container">
+                <div class="envi-heading txt-center">
+                    <h2><span class="heading-2nd">Environment</span></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-4" v-for="edata in environment" :key="edata.id">
+                            <div class="env-card">
+                                <div class="env-card-body">
+                                    <div class="env-image-card">
+                                        <img :src="edata.image" />
+                                    </div>
+                                    <div class="env-card-content">
+                                        <h3>{{edata.heading}}</h3>
+                                        <p>{{edata.description}}</p>
+                                    </div>
+                                    <div class="env-card-bottom-btn">
+                                        Read More
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!---End Enviroment Section--->
 
         <!---Start Inovative Section--->
         <section class="about-sec innovative">
@@ -207,38 +252,6 @@
 
         </section>
         <!---End Inovative Section--->
-
-        <!---Start Enviroment Section--->
-        <section class="about-sec environment">
-            <div class="container">
-                <div class="envi-heading txt-center">
-                    <h2><span class="heading-2nd">Environment</span></h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                </div>
-
-                <div class="row">
-                        <div class="col-md-4" v-for="edata in environment" :key="edata.id">
-                            <div class="env-card">
-                                <div class="env-card-body">
-                                    <div class="env-image-card">
-                                        <img :src="edata.image" />
-                                    </div>
-                                    <div class="env-card-content">
-                                        <h3>{{edata.heading}}</h3>
-                                        <p>{{edata.description}}</p>
-                                    </div>
-                                    <div class="env-card-bottom-btn">
-                                        Read More
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                   
-                </div>
-            </div>
-        </section>
-        <!---End Enviroment Section--->
 
         <!---Start Involved Section--->
         <div class="about-sec involed">
@@ -296,22 +309,6 @@
         <!---End Blog Section--->  
 
 
-        
-        
-        <!---Start Achievements Section--->
-        <section class="about-sec achievements">
-            <div class="container">
-                <h2><span class="heading-span-clr">Our</span> <span class="heading-2nd">Achievements</span></h2>
-                <div class="w-50">
-                    <hr role="tournament6" />
-                </div>
-            </div>
-            
-            <FullScreenSlider :data="full_screen_slider_data" />
-        </section>
-        <!---End Achievements Section--->  
-
-
         <!-----start tab-video section--->
 
         <section class="tab-video ">
@@ -340,35 +337,37 @@
                     </div>
                 </div>
                 <div class="tab-video-area">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="video-thumbnails p-rel">
-                                <img src="/images/video.png">
-                                <div class="play-btn-area">
-                                    <i class="fas fa-play"></i>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="video-thumbnails p-rel">
+                                    <img src="/images/video.png">
+                                    <div class="play-btn-area">
+                                        <i class="fas fa-play"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="slide-2-slider">
-                                <template v-if="videos.length>0">
-                                    <VueSlickCarousel v-bind="VideoOptions" ref="VideoSlides">
-                                        <template v-for="idata in videos">
-                                            <div class="top-bottom-slide">
-                                                <img class="" :src="idata.image" />
-                                            </div>
-                                        </template>
-                                    </VueSlickCarousel>    
-                                </template>
+                            <div class="col-md-3">
+                                <div class="slide-2-slider">
+                                    <template v-if="videos.length>0">
+                                        <VueSlickCarousel v-bind="VideoOptions" ref="VideoSlides">
+                                            <template v-for="idata in videos">
+                                                <div class="top-bottom-slide">
+                                                    <img class="" :src="idata.image" />
+                                                </div>
+                                            </template>
+                                        </VueSlickCarousel>    
+                                    </template>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-1 p-rel">
-                            <button type="button" data-role="none" class="slick-prev slick-arrow video-slide-arrow-left" style="" @click="prevNavClickVideo">
-                                <i class="fas fa-arrow-up"></i>
-                            </button>
-                            <button type="button" data-role="none" class="slick-next slick-arrow video-slide-arrow-right" style="" @click="nextNavClickVideo">
-                                <i class="fas fa-arrow-down"></i>
-                            </button>
+                            <div class="col-md-1 p-rel">
+                                <button type="button" data-role="none" class="slick-prev slick-arrow video-slide-arrow-left" style="" @click="prevNavClickVideo">
+                                    <i class="fas fa-arrow-up"></i>
+                                </button>
+                                <button type="button" data-role="none" class="slick-next slick-arrow video-slide-arrow-right" style="" @click="nextNavClickVideo">
+                                    <i class="fas fa-arrow-down"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -425,6 +424,7 @@
 </template>
 
 <script>
+import BookComponent from '~/components/BookComponent.vue';
 import CounterComponent from '~/components/CounterComponent.vue';
 import FullScreenSlider from '~/components/FullScreenSlider.vue';
 import LeftSlider from '~/components/LeftSlider.vue';
@@ -607,6 +607,14 @@ export default {
                     },
                 ],
             },
+            book_options: {
+                duration: 1500,
+                perspective: 1500,
+                delay: 1000,
+                autoplay: true,
+                loop: false,
+            },
+            book_list: [1,2,3,4,5]
         };
     },
     mounted() {
@@ -635,6 +643,6 @@ export default {
             this.$refs.VideoSlides.prev();
         },
     },
-    components: { TwoSlideSlider, MultiSlideComponent, CounterComponent, LeftSlider, FullScreenSlider, ThreeGreySlideSlider }
+    components: { TwoSlideSlider, MultiSlideComponent, CounterComponent, LeftSlider, FullScreenSlider, ThreeGreySlideSlider, BookComponent }
 }
 </script>

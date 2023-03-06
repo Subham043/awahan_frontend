@@ -107,15 +107,29 @@ hr[role="tournament6"]::before {
   border-color: #818181;
   padding: 13px;
   transform: rotate(45deg);
-  left: 20%;
+  left: 15%;
   margin: -14px 0 0 -22px;
   content: "";
 }
 .about-sec {
-  padding: 30px 0;
+  padding: 40px 0;
 }
+.environment, .innovative, .blog{
+  padding-top: 20px;
+}
+
+.involed{
+  padding-top: 0px;
+}
+
 .heading-span-clr {
   color: #8f8f8f;
+}
+.about-content{
+  padding-left: 30px;
+}
+.about-content-2{
+  padding-left: 0px;
 }
 .about-content p {
   color: #616161;
@@ -128,6 +142,7 @@ hr[role="tournament6"]::before {
 }
 .donate-sec {
   padding: 30px 0 0;
+  padding-top: 0;
 }
 .donate-content p {
   color: #616161;
@@ -140,7 +155,7 @@ hr[role="tournament6"]::before {
 }
 .multi-slider-main {
   background-color: #c0f0f9;
-  padding: 2% 4%;
+  padding: 20px 50px;
   margin: 3% 0;
   border-radius: 10px;
   position: relative;
@@ -159,7 +174,7 @@ hr[role="tournament6"]::before {
 }
 .multi-slider-right {
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 45%;
   border: unset !important;
   background-color: #0000008f;
@@ -172,16 +187,18 @@ hr[role="tournament6"]::before {
 .slide-heading-box {
   position: absolute;
   bottom: 10%;
-  background-color: #2e809457;
+  background-color: #2e8094a8;
   width: 100%;
   text-align: center;
   color: #fff;
+  padding: 5px 30px;
 }
-.slide-heading-box h4 {
+/* .slide-heading-box h4 {
   padding: 8px 8px;
-}
+} */
 .slide-heading-box p {
-  padding: 8px 8px;
+  /* padding: 8px 8px; */
+  margin-bottom: 0;
 }
 img {
   width: 100%;
@@ -195,6 +212,8 @@ img {
 .slide-box-collsp:hover .middle {
   opacity: 1;
   padding: 5px;
+  width: 100%;
+  height: 100%;
 }
 .middle {
   transition: 0.5s ease;
@@ -207,8 +226,8 @@ img {
   text-align: center;
 }
 .middle-box {
-  width: 355px;
-  height: 435px;
+  width: 100%;
+  height: 100%;
   background-color: #000000cf;
   color: #fff;
   padding: 5px;
@@ -305,6 +324,7 @@ img {
   font-size: 30px;
   border: unset;
   left: 32px;
+  background: #e2dedeb3;
 }
 .two-slide-arrow-right {
   position: absolute;
@@ -314,6 +334,7 @@ img {
   font-size: 30px;
   border: unset;
   right: 32px;
+  background: #e2dedeb3;
 }
 .p-rel {
   position: relative;
@@ -384,7 +405,13 @@ img {
 .counter-bg {
   text-align: center;
   color: #fff;
-  padding: 10px 10px;
+  padding: 25px 10px 5px 10px;
+}
+.counter-bg p{
+  margin-bottom: 10px;
+}
+.counter-bg h4{
+  margin-bottom: 0;
 }
 .counter-bg1 {
   background-color: #3ba5be;
@@ -418,12 +445,12 @@ img {
 .col-health {
   color: #fff;
 }
-.col-health .health-heading {
+/* .col-health .health-heading {
   padding-left: 20%;
 }
 .col-health .health-description {
   padding-left: 20%;
-}
+} */
 .health-left {
   background-color: #fff;
   padding: 8px 15px;
@@ -534,8 +561,14 @@ img {
   color: #006d88;
 }
 .e-comm-section {
-  padding: 30px;
+  padding: 30px 0;
+  padding-top: 45px;
 }
+
+.e-comm-section .product-slide{
+  padding: 0;
+}
+
 .e-comm-heading p {
   padding: 10px 15%;
 }
