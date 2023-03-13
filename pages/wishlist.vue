@@ -173,7 +173,6 @@ export default {
     color: white;
     font-size: 14px;
     padding: 5px 15px;
-    margin-top: 15px;
 }
 .del-btn{
     display: inline-block;
@@ -184,19 +183,6 @@ export default {
     color: #2E8094;
     font-size: 14px;
     padding: 5px 15px;
-    margin-top: 15px;
-}
-.chkout-btn{
-    display: inline-block;
-    width: 70%;
-    border-radius: 5px;
-    outline: none;
-    border: 1px dotted #2E8094;
-    background-color: #2d8094;
-    color: white;
-    font-size: 15px;
-    padding: 10px 15px;
-    margin-top: 15px;
 }
 .counter-label{
     font-size: 25px;

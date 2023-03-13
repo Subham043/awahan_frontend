@@ -14,6 +14,13 @@
     "_name": "_bfbad2f0"
   },
   {
+    "name": "orders",
+    "path": "/orders",
+    "component": "/Users/subham/Documents/awahan/pages/orders.vue",
+    "chunkName": "pages/orders",
+    "_name": "_725c4fdb"
+  },
+  {
     "name": "products",
     "path": "/products",
     "component": "/Users/subham/Documents/awahan/pages/products/index.vue",
