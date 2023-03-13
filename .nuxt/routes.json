@@ -1,5 +1,12 @@
 [
   {
+    "name": "cart",
+    "path": "/cart",
+    "component": "/Users/subham/Documents/awahan/pages/cart.vue",
+    "chunkName": "pages/cart",
+    "_name": "_7d7b1bd4"
+  },
+  {
     "name": "donation",
     "path": "/donation",
     "component": "/Users/subham/Documents/awahan/pages/donation.vue",
