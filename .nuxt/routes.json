@@ -21,6 +21,13 @@
     "_name": "_0529c25d"
   },
   {
+    "name": "wishlist",
+    "path": "/wishlist",
+    "component": "/Users/subham/Documents/awahan/pages/wishlist.vue",
+    "chunkName": "pages/wishlist",
+    "_name": "_5062733b"
+  },
+  {
     "name": "products-id",
     "path": "/products/:id",
     "component": "/Users/subham/Documents/awahan/pages/products/_id.vue",
