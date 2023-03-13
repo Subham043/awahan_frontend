@@ -5,7 +5,9 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _7d7b1bd4 = () => interopDefault(import('../pages/cart.vue' /* webpackChunkName: "pages/cart" */))
+const _70c6c8dc = () => interopDefault(import('../pages/change-password.vue' /* webpackChunkName: "pages/change-password" */))
 const _bfbad2f0 = () => interopDefault(import('../pages/donation.vue' /* webpackChunkName: "pages/donation" */))
+const _c71e1cfc = () => interopDefault(import('../pages/my-account.vue' /* webpackChunkName: "pages/my-account" */))
 const _725c4fdb = () => interopDefault(import('../pages/orders.vue' /* webpackChunkName: "pages/orders" */))
 const _0529c25d = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
 const _5062733b = () => interopDefault(import('../pages/wishlist.vue' /* webpackChunkName: "pages/wishlist" */))
@@ -28,9 +30,17 @@ export const routerOptions = {
     component: _7d7b1bd4,
     name: "cart"
   }, {
+    path: "/change-password",
+    component: _70c6c8dc,
+    name: "change-password"
+  }, {
     path: "/donation",
     component: _bfbad2f0,
     name: "donation"
+  }, {
+    path: "/my-account",
+    component: _c71e1cfc,
+    name: "my-account"
   }, {
     path: "/orders",
     component: _725c4fdb,

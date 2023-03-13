@@ -3,49 +3,54 @@
     "name": "cart",
     "path": "/cart",
     "component": "/Users/subham/Documents/awahan/pages/cart.vue",
-    "chunkName": "pages/cart",
-    "_name": "_7d7b1bd4"
+    "chunkName": "pages/cart"
+  },
+  {
+    "name": "change-password",
+    "path": "/change-password",
+    "component": "/Users/subham/Documents/awahan/pages/change-password.vue",
+    "chunkName": "pages/change-password"
   },
   {
     "name": "donation",
     "path": "/donation",
     "component": "/Users/subham/Documents/awahan/pages/donation.vue",
-    "chunkName": "pages/donation",
-    "_name": "_bfbad2f0"
+    "chunkName": "pages/donation"
+  },
+  {
+    "name": "my-account",
+    "path": "/my-account",
+    "component": "/Users/subham/Documents/awahan/pages/my-account.vue",
+    "chunkName": "pages/my-account"
   },
   {
     "name": "orders",
     "path": "/orders",
     "component": "/Users/subham/Documents/awahan/pages/orders.vue",
-    "chunkName": "pages/orders",
-    "_name": "_725c4fdb"
+    "chunkName": "pages/orders"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "/Users/subham/Documents/awahan/pages/products/index.vue",
-    "chunkName": "pages/products/index",
-    "_name": "_0529c25d"
+    "chunkName": "pages/products/index"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
     "component": "/Users/subham/Documents/awahan/pages/wishlist.vue",
-    "chunkName": "pages/wishlist",
-    "_name": "_5062733b"
+    "chunkName": "pages/wishlist"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
     "component": "/Users/subham/Documents/awahan/pages/products/_id.vue",
-    "chunkName": "pages/products/_id",
-    "_name": "_1e0eb805"
+    "chunkName": "pages/products/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/subham/Documents/awahan/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_2cd7d9cc"
+    "chunkName": "pages/index"
   }
 ]
