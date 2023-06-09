@@ -42,7 +42,7 @@
             <a href="#contact">Our Journey</a>
             <a href="#contact">Our Programs</a>
             <a href="#about">Our Achievements</a>
-            <NuxtLink to="/"><img src="~/static/images/logo/mobile-logo.png" width="70%"/></NuxtLink>
+            <NuxtLink class="image-style" to="/"><img src="~/static/images/home/logo-1.png" width="100%"/></NuxtLink>
             <NuxtLink to="/products">Products</NuxtLink>
             <a href="#about">Aahwahan Patrika</a>
             <a href="#about">Media Presence</a>
@@ -80,3 +80,10 @@ export default {
     }
 }
 </script>
+
+<style>
+.image-style{
+    width: 18%;
+    padding: 0px !important;
+}
+</style>

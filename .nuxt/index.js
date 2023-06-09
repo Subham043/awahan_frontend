@@ -13,14 +13,14 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_toast_8561e5fe from 'nuxt_plugin_toast_8561e5fe' // Source: ./toast.js (mode: 'client')
-import nuxt_plugin_vuescrollto_024ca577 from 'nuxt_plugin_vuescrollto_024ca577' // Source: ./vue-scrollto.js (mode: 'client')
-import nuxt_plugin_workbox_b37f2e24 from 'nuxt_plugin_workbox_b37f2e24' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_675e3bfe from 'nuxt_plugin_metaplugin_675e3bfe' // Source: ./pwa/meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_5e0ef116 from 'nuxt_plugin_iconplugin_5e0ef116' // Source: ./pwa/icon.plugin.js (mode: 'all')
-import nuxt_plugin_axios_1dc27f5c from 'nuxt_plugin_axios_1dc27f5c' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_datefns_6e9cc03a from 'nuxt_plugin_datefns_6e9cc03a' // Source: ./date-fns.js (mode: 'all')
-import nuxt_plugin_fontawesome_a5f8e3d8 from 'nuxt_plugin_fontawesome_a5f8e3d8' // Source: ./fontawesome.js (mode: 'all')
+import nuxt_plugin_toast_7eab31e4 from 'nuxt_plugin_toast_7eab31e4' // Source: ./toast.js (mode: 'client')
+import nuxt_plugin_vuescrollto_086acb34 from 'nuxt_plugin_vuescrollto_086acb34' // Source: ./vue-scrollto.js (mode: 'client')
+import nuxt_plugin_workbox_fdb23dde from 'nuxt_plugin_workbox_fdb23dde' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_8acaf1b8 from 'nuxt_plugin_metaplugin_8acaf1b8' // Source: ./pwa/meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_817ba6d0 from 'nuxt_plugin_iconplugin_817ba6d0' // Source: ./pwa/icon.plugin.js (mode: 'all')
+import nuxt_plugin_axios_9b0a3596 from 'nuxt_plugin_axios_9b0a3596' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_datefns_1ef56712 from 'nuxt_plugin_datefns_1ef56712' // Source: ./date-fns.js (mode: 'all')
+import nuxt_plugin_fontawesome_41db3cb7 from 'nuxt_plugin_fontawesome_41db3cb7' // Source: ./fontawesome.js (mode: 'all')
 import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ../plugins/element-ui (mode: 'all')
 import nuxt_plugin_zoomonhover_a38b49d8 from 'nuxt_plugin_zoomonhover_a38b49d8' // Source: ../plugins/zoom-on-hover (mode: 'client')
 import nuxt_plugin_imageviewer_01887d2c from 'nuxt_plugin_imageviewer_01887d2c' // Source: ../plugins/image_viewer (mode: 'all')
@@ -29,7 +29,7 @@ import nuxt_plugin_publicApi_634fd7dc from 'nuxt_plugin_publicApi_634fd7dc' // S
 import nuxt_plugin_privateApi_1da1ad6c from 'nuxt_plugin_privateApi_1da1ad6c' // Source: ../plugins/privateApi.js (mode: 'all')
 import nuxt_plugin_pagination_0c55d867 from 'nuxt_plugin_pagination_0c55d867' // Source: ../plugins/pagination.js (mode: 'all')
 import nuxt_plugin_vueslickcarousel_1c6345a5 from 'nuxt_plugin_vueslickcarousel_1c6345a5' // Source: ../plugins/vue-slick-carousel.js (mode: 'all')
-import nuxt_plugin_auth_e0bad2c4 from 'nuxt_plugin_auth_e0bad2c4' // Source: ./auth.js (mode: 'all')
+import nuxt_plugin_auth_4b8cc95b from 'nuxt_plugin_auth_4b8cc95b' // Source: ./auth.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -97,7 +97,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Hrudayaspandana","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"httpEquiv":"X-UA-Compatible","content":"IE=edge"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"course"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"course"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"course"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.e3e9fb.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.e3e9fb.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.1c50a8a8.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Hrudayaspandana","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"httpEquiv":"X-UA-Compatible","content":"IE=edge"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -226,36 +226,36 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_toast_8561e5fe === 'function') {
-    await nuxt_plugin_toast_8561e5fe(app.context, inject)
+  if (process.client && typeof nuxt_plugin_toast_7eab31e4 === 'function') {
+    await nuxt_plugin_toast_7eab31e4(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_vuescrollto_024ca577 === 'function') {
-    await nuxt_plugin_vuescrollto_024ca577(app.context, inject)
+  if (process.client && typeof nuxt_plugin_vuescrollto_086acb34 === 'function') {
+    await nuxt_plugin_vuescrollto_086acb34(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_b37f2e24 === 'function') {
-    await nuxt_plugin_workbox_b37f2e24(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_fdb23dde === 'function') {
+    await nuxt_plugin_workbox_fdb23dde(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_675e3bfe === 'function') {
-    await nuxt_plugin_metaplugin_675e3bfe(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_8acaf1b8 === 'function') {
+    await nuxt_plugin_metaplugin_8acaf1b8(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_iconplugin_5e0ef116 === 'function') {
-    await nuxt_plugin_iconplugin_5e0ef116(app.context, inject)
+  if (typeof nuxt_plugin_iconplugin_817ba6d0 === 'function') {
+    await nuxt_plugin_iconplugin_817ba6d0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_1dc27f5c === 'function') {
-    await nuxt_plugin_axios_1dc27f5c(app.context, inject)
+  if (typeof nuxt_plugin_axios_9b0a3596 === 'function') {
+    await nuxt_plugin_axios_9b0a3596(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_datefns_6e9cc03a === 'function') {
-    await nuxt_plugin_datefns_6e9cc03a(app.context, inject)
+  if (typeof nuxt_plugin_datefns_1ef56712 === 'function') {
+    await nuxt_plugin_datefns_1ef56712(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_fontawesome_a5f8e3d8 === 'function') {
-    await nuxt_plugin_fontawesome_a5f8e3d8(app.context, inject)
+  if (typeof nuxt_plugin_fontawesome_41db3cb7 === 'function') {
+    await nuxt_plugin_fontawesome_41db3cb7(app.context, inject)
   }
 
   if (typeof nuxt_plugin_elementui_d905880e === 'function') {
@@ -290,8 +290,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vueslickcarousel_1c6345a5(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_auth_e0bad2c4 === 'function') {
-    await nuxt_plugin_auth_e0bad2c4(app.context, inject)
+  if (typeof nuxt_plugin_auth_4b8cc95b === 'function') {
+    await nuxt_plugin_auth_4b8cc95b(app.context, inject)
   }
 
   // Lock enablePreview in context

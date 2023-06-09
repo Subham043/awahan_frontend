@@ -12,6 +12,18 @@
                                         <div class="achi-heading">
                                             {{ idata.heading }}
                                         </div>
+                                        <div class="achi-heading">
+                                            {{ idata.number }}
+                                        </div>
+                                        <div class="achi-desc">
+                                            {{ idata.title1 }}
+                                        </div>
+                                        <div class="achi-heading">
+                                            {{ idata.number2 }}
+                                        </div>
+                                        <div class="achi-desc">
+                                            {{ idata.title2 }}
+                                        </div>
                                         <div class="achi-desc">
                                             {{ idata.description }}
                                         </div>

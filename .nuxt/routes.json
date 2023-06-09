@@ -2,55 +2,55 @@
   {
     "name": "cart",
     "path": "/cart",
-    "component": "/Users/subham/Documents/awahan/pages/cart.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/cart.vue",
     "chunkName": "pages/cart"
   },
   {
     "name": "change-password",
     "path": "/change-password",
-    "component": "/Users/subham/Documents/awahan/pages/change-password.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/change-password.vue",
     "chunkName": "pages/change-password"
   },
   {
     "name": "donation",
     "path": "/donation",
-    "component": "/Users/subham/Documents/awahan/pages/donation.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/donation.vue",
     "chunkName": "pages/donation"
   },
   {
     "name": "my-account",
     "path": "/my-account",
-    "component": "/Users/subham/Documents/awahan/pages/my-account.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/my-account.vue",
     "chunkName": "pages/my-account"
   },
   {
     "name": "orders",
     "path": "/orders",
-    "component": "/Users/subham/Documents/awahan/pages/orders.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/orders.vue",
     "chunkName": "pages/orders"
   },
   {
     "name": "products",
     "path": "/products",
-    "component": "/Users/subham/Documents/awahan/pages/products/index.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/products/index.vue",
     "chunkName": "pages/products/index"
   },
   {
     "name": "wishlist",
     "path": "/wishlist",
-    "component": "/Users/subham/Documents/awahan/pages/wishlist.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/wishlist.vue",
     "chunkName": "pages/wishlist"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
-    "component": "/Users/subham/Documents/awahan/pages/products/_id.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/products/_id.vue",
     "chunkName": "pages/products/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/subham/Documents/awahan/pages/index.vue",
+    "component": "/Users/js-pro-11/Downloads/awahan/pages/index.vue",
     "chunkName": "pages/index"
   }
 ]

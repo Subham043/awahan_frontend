@@ -23,7 +23,7 @@
                                 <div class="corner2"></div>
                                 <div class="corner-fold"></div>
                                 <div class="page-text w-richtext">
-                                    <img src="/images/r3.png" alt="">
+                                    <img src="/images/home/aahwahan-book-1.png" alt="">
                                     <div class="btn-grp-cont">
                                         <a href="" class="read_more_btn">Read More</a>
                                         <button class="donate_btn">Donate Now</button>

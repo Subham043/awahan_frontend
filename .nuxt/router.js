@@ -4,15 +4,15 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7d7b1bd4 = () => interopDefault(import('../pages/cart.vue' /* webpackChunkName: "pages/cart" */))
-const _70c6c8dc = () => interopDefault(import('../pages/change-password.vue' /* webpackChunkName: "pages/change-password" */))
-const _bfbad2f0 = () => interopDefault(import('../pages/donation.vue' /* webpackChunkName: "pages/donation" */))
-const _c71e1cfc = () => interopDefault(import('../pages/my-account.vue' /* webpackChunkName: "pages/my-account" */))
-const _725c4fdb = () => interopDefault(import('../pages/orders.vue' /* webpackChunkName: "pages/orders" */))
-const _0529c25d = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
-const _5062733b = () => interopDefault(import('../pages/wishlist.vue' /* webpackChunkName: "pages/wishlist" */))
-const _1e0eb805 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
-const _2cd7d9cc = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _fac2d20e = () => interopDefault(import('../pages/cart.vue' /* webpackChunkName: "pages/cart" */))
+const _baf0ca62 = () => interopDefault(import('../pages/change-password.vue' /* webpackChunkName: "pages/change-password" */))
+const _5b4b91eb = () => interopDefault(import('../pages/donation.vue' /* webpackChunkName: "pages/donation" */))
+const _3148a025 = () => interopDefault(import('../pages/my-account.vue' /* webpackChunkName: "pages/my-account" */))
+const _4d42c7fe = () => interopDefault(import('../pages/orders.vue' /* webpackChunkName: "pages/orders" */))
+const _19193100 = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
+const _0b8b6e9e = () => interopDefault(import('../pages/wishlist.vue' /* webpackChunkName: "pages/wishlist" */))
+const _48956c30 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
+const _d1ff5d6e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -27,39 +27,39 @@ export const routerOptions = {
 
   routes: [{
     path: "/cart",
-    component: _7d7b1bd4,
+    component: _fac2d20e,
     name: "cart"
   }, {
     path: "/change-password",
-    component: _70c6c8dc,
+    component: _baf0ca62,
     name: "change-password"
   }, {
     path: "/donation",
-    component: _bfbad2f0,
+    component: _5b4b91eb,
     name: "donation"
   }, {
     path: "/my-account",
-    component: _c71e1cfc,
+    component: _3148a025,
     name: "my-account"
   }, {
     path: "/orders",
-    component: _725c4fdb,
+    component: _4d42c7fe,
     name: "orders"
   }, {
     path: "/products",
-    component: _0529c25d,
+    component: _19193100,
     name: "products"
   }, {
     path: "/wishlist",
-    component: _5062733b,
+    component: _0b8b6e9e,
     name: "wishlist"
   }, {
     path: "/products/:id",
-    component: _1e0eb805,
+    component: _48956c30,
     name: "products-id"
   }, {
     path: "/",
-    component: _2cd7d9cc,
+    component: _d1ff5d6e,
     name: "index"
   }],
 

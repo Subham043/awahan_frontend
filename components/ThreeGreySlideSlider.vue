@@ -17,7 +17,7 @@
                                                 <h3>{{idata.heading}}</h3>
                                             </div>
                                             <div class=" px-3 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium eveniet accusantium laudantium voluptate expedita quos a. Explicabo dolorem nemo odit perspiciatis dolores maxime laudantium ex temporibus, tempora eligendi similique?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores praesentium eveniet accusantium laudantium voluptate expedita quos a. Explicabo dolorem nemo odit perspiciatis dolores maxime laudantium <a class="read-more" href="#">Read more...</a></p>
                                             </div>
                                             <div class="p5">
                                                 <div class="inv-card-bootom-btn secondary-type-btn row justify-content-center align-items-center box-size">
@@ -140,5 +140,9 @@ export default {
     right: -30px;
     background-color: rgba(0, 0, 0, 0.58);
     color: white;
+}
+.read-more{
+    color: #3593aa;
+    text-decoration: none;
 }
 </style>

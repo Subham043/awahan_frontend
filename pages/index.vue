@@ -47,7 +47,7 @@
         <!---Start About Section--->
         <section class="about-sec">
             <div class="container">
-                <h2><span class="heading-span-clr">About</span> <span class="heading-2nd">Aahwahan</span></h2>
+                <h2><span class="heading-span-clr">About</span> <span class="heading-2nd">Aahwahan Foundation</span></h2>
                 <div class="w-50">
                     <hr role="tournament6" />
                 </div>
@@ -55,12 +55,12 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/abt_4.jpg" class="w-100" />
+                            <img src="/images/home/aahwahan-about-1.png" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="about-content">
-                            <h3>AAHWAHAN FOUNDATION</h3>
+                            <!-- <h3>AAHWAHAN FOUNDATION</h3> -->
                             <p>Aahwahan - is an NGO that is involved in promoting the welfare of the economically
                                 backward sections of the society by generating employment across various sectors.
                                 It was founded in 2009 by a team of like-minded individuals with a commitment to eradicate
@@ -111,7 +111,7 @@
 
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/abt_2.jpg" class="w-100" />
+                            <img src="/images/home/aahwahan-donate-1.png" class="w-100" />
                         </div>
                     </div>
 
@@ -138,7 +138,7 @@
         <!--- start health section--->
         <section class="container-fluid p-unset health-sec">
             <div class="health-bg"
-                :style="`backgroundImage: url('/images/bnr_1.png'); background-position:center center; `">
+                :style="`backgroundImage: url('/images/home/full-1.png'); background-position:center center; `">
 
                 <div class="row health-row m-unset align-items-center justify-content-between">
                     <div class="col-md-5 offset-md-1 col-health">
@@ -237,7 +237,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/about/about.jpg" class="w-100" />
+                            <img src="/images/home/aahwahan-innovation-1.png" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -256,7 +256,7 @@
                     </div>
                 </div>
 
-                <MultiSlideComponent :data="multi_slide_data" />
+                <MultiSlideComponent :data="multi_slide_data2" />
 
             </div>
 
@@ -276,7 +276,7 @@
                     </div>
                 </div>
 
-                <TwoSlideSlider :data="two_slider_data" />
+                <TwoSlideSlider :data="two_slider_data2" />
 
 
             </div>
@@ -294,7 +294,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about-img-box">
-                            <img src="/images/about/about.jpg" class="w-100" />
+                            <img src="/images/home/aahwahan-blogs-1.png" class="w-100" />
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -313,7 +313,7 @@
                     </div>
                 </div>
 
-                <MultiSlideComponent :data="multi_slide_data" />
+                <MultiSlideComponent :data="multi_slide_data3" />
 
             </div>
 
@@ -354,7 +354,7 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="video-thumbnails p-rel">
-                                    <img src="/images/video.png">
+                                    <img src="/images/home/aahwahan-video-3.png">
                                     <div class="play-btn-area">
                                         <i class="fas fa-play"></i>
                                     </div>
@@ -456,15 +456,16 @@ export default {
     data() {
         return {
             left_slider_data: [
-                { id: 1, heading: 'Tree Plantation', image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: '', image: "/images/home/aahwahan-full-IMAGE-health-1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 2, heading: 'Organic Vilage', image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 3, heading: 'Lake Restoration', image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             full_screen_slider_data: [
-                { id: 1, heading: 'Tree Plantation', image: "/images/r1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 2, heading: 'Organic Vilage', image: "/images/r2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: 'Lake Restoration', image: "/images/r3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 4, heading: 'Lake Restoration', image: "/images/t1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: 'Tree Plantation', image: "/images/home/aahwahan-4-1.png", description: "", number:17.317, title1:"cataract Surgeries", number2:91936, title2:"spectacles supported"},
+                { id: 2, heading: 'Education', image: "/images/home/aahwahan-4-2.png", description: "Lorem Ipsum has been the industry's standard dummy", number:136666, title1:"", number2:"", title2:""},
+                // { id: 2, heading: 'Organic Vilage', image: "/images/home/aahwahan-4-2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 3, heading: 'Lake Restoration', image: "/images/home/aahwahan-4-3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 4, heading: 'Lake Restoration', image: "/images/home/aahwahan-4-4.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 5, heading: 'Tree Plantation', image: "/images/t2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 6, heading: 'Organic Vilage', image: "/images/t3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 7, heading: 'Lake Restoration', image: "/images/t4.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
@@ -475,12 +476,22 @@ export default {
                 { id: 12, heading: 'Lake Restoration', image: "/images/t2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
             multi_slide_data: [
-                { id: 1, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/r1.png' },
-                { id: 2, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/r2.png' },
-                { id: 3, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/r3.png' },
-                { id: 4, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t1.png' },
-                { id: 5, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t2.png' },
-                { id: 6, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t3.png' },
+                { id: 1, title: 'Education', description: 'This is with the intention of offering...', heading: 'Education', image: '/images/home/aahwahan-education-1.png' },
+                { id: 2, title: 'Health', description: 'It is  a mobile health van where we reach out...', heading: 'Health', image: '/images/home/aahwahan-Health-1.png' },
+                { id: 3, title: 'Plantation', description: 'To restore the green healthy planet, we have been...', heading: 'Plantation', image: '/images/home/aahwahan-plantation-1.png' },
+                // { id: 4, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t1.png' },
+                // { id: 5, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t2.png' },
+                // { id: 6, title: 'Health', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Help us to educate', image: '/images/t3.png' },
+            ],
+            multi_slide_data2: [
+                { id: 1, title: 'Health on Wheels', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Health on Wheels', image: '/images/home/aahwahan-3of1-3.png' },
+                { id: 2, title: 'Model Science Lab', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Model Science Lab', image: '/images/home/aahwahan-3of1-2.png' },
+                { id: 3, title: 'Beach Cleaning', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Beach Cleaning', image: '/images/home/aahwahan-3of1-1.png' },
+            ],
+            multi_slide_data3: [
+                { id: 1, title: 'Integrated Agriculture', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Integrated Agriculture', image: '/images/home/agriculture.png' },
+                { id: 2, title: 'Blanket Donation', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Blanket Donation', image: '/images/home/blanket-donation.png' },
+                { id: 3, title: 'Women Empowerment', description: 'Lorem Ipsum is simply dummy text of the printing', heading: 'Women Empowerment', image: '/images/home/women-empowerment.png' },
             ],
             counter_data: [
                 { id: 1, title: 'Successfully Projects', counter: 1043 },
@@ -489,36 +500,42 @@ export default {
                 { id: 4, title: 'Successfully Projects', counter: 1043 },
             ],
             two_slider_data: [
-                { id: 1, heading: 'Tree Plantation', image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 2, heading: 'Organic Vilage', image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: 'Lake Restoration', image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: 'Tree Plantation', image: "/images/home/aahwahan-1of3-1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 2, heading: 'Organic Vilage', image: "/images/home/aahwahan-1of3-2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 3, heading: 'Lake Restoration', image: "/images/home/aahwahan-1of3-3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
                 { id: 4, heading: 'Tree Plantation', image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
             ],
+            two_slider_data2: [
+                { id: 1, heading: 'Tree Plantation', image: "/images/home/aahwahan-getinvolved-1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 2, heading: 'Organic Vilage', image: "/images/home/aahwahan-getinvolved-2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                // { id: 3, heading: 'Lake Restoration', image: "/images/home/aahwahan-1of3-3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                // { id: 4, heading: 'Tree Plantation', image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+            ],
             banner: [
-                { id: 1, name: "", image: "/images/banner/b1.jpg" },
-                { id: 2, name: "", image: "/images/banner/b2.jpg" },
-                { id: 3, name: "", image: "/images/banner/b3.jpg" },
+                { id: 1, name: "", image: "/images/home/aahwahan-banner-1.png" },
+                // { id: 2, name: "", image: "/images/banner/b2.jpg" },
+                // { id: 3, name: "", image: "/images/banner/b3.jpg" },
             ],
             environment: [
-                { id: 1, heading: "Tree Plantation", image: "/images/b3.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 2, heading: "Organic Vilage", image: "/images/b2.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
-                { id: 3, heading: "Lake Restoration", image: "/images/b1.png", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" },
+                { id: 1, heading: "Tree Plantation", image: "/images/home/aahwahan-2of3-3.png", description: "Education always beats the beauty and the youth. Education is so rudimentary..." },
+                { id: 2, heading: "Organic Vilage", image: "/images/home/aahwahan-2of3-2.png", description: "Aahwahan family beleives 'health is a blessing' and thus taking a step..." },
+                { id: 3, heading: "Lake Restoration", image: "/images/home/aahwahan-2of3-1.png", description: "Aahwahan foundation bring about innovations in the field of agriculture.." },
             ],
             videos: [
-                { id: 1, heading: "Tree Plantation", image: "/images/vv1.png", },
-                { id: 2, heading: "Organic Vilage", image: "/images/vv2.jpg", },
+                { id: 1, heading: "Tree Plantation", image: "/images/home/aahwahan-video-1.png", },
+                { id: 2, heading: "Organic Vilage", image: "/images/home/aahwahan-video-2.png", },
                 { id: 3, heading: "Lake Restoration", image: "/images/vv3.jpg", },
                 { id: 4, heading: "Lake Restoration", image: "/images/vv4.jpg", },
             ],
             products: [
-                { id: 1, heading: "Product 1", image: "/images/vv1.png", price: '250' },
-                { id: 2, heading: "Product 2", image: "/images/vv2.jpg", price: '450' },
-                { id: 3, heading: "Product 3", image: "/images/vv3.jpg", price: '350' },
-                { id: 4, heading: "Product 4", image: "/images/vv4.jpg", price: '650' },
-                { id: 5, heading: "Product 5", image: "/images/vv5.png", price: '250' },
-                { id: 6, heading: "Product 6", image: "/images/vv6.png", price: '450' },
-                { id: 7, heading: "Product 7", image: "/images/vv1.png", price: '350' },
-                { id: 8, heading: "Product 8", image: "/images/vv3.jpg", price: '650' },
+                { id: 1, heading: "Product 1", image: "/images/home/product-1.png", price: '250' },
+                { id: 2, heading: "Product 2", image: "/images/home/product-2.png", price: '450' },
+                { id: 3, heading: "Product 3", image: "/images/home/product-3.png", price: '350' },
+                { id: 4, heading: "Product 4", image: "/images/home/product-4.png", price: '650' },
+                // { id: 5, heading: "Product 5", image: "/images/vv5.png", price: '250' },
+                // { id: 6, heading: "Product 6", image: "/images/vv6.png", price: '450' },
+                // { id: 7, heading: "Product 7", image: "/images/vv1.png", price: '350' },
+                // { id: 8, heading: "Product 8", image: "/images/vv3.jpg", price: '650' },
             ],
             slickOptions: {
                 arrows: false,

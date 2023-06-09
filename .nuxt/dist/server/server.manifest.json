@@ -1,0 +1,27 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/cart.js": "pages/cart.js",
+    "pages/change-password.js": "pages/change-password.js",
+    "pages/donation.js": "pages/donation.js",
+    "pages/index.js": "pages/index.js",
+    "pages/my-account.js": "pages/my-account.js",
+    "pages/orders.js": "pages/orders.js",
+    "pages/products/_id.js": "pages/products/_id.js",
+    "pages/products/index.js": "pages/products/index.js",
+    "pages/wishlist.js": "pages/wishlist.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/cart.js": "pages/cart.js.map",
+    "pages/change-password.js": "pages/change-password.js.map",
+    "pages/donation.js": "pages/donation.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/my-account.js": "pages/my-account.js.map",
+    "pages/orders.js": "pages/orders.js.map",
+    "pages/products/_id.js": "pages/products/_id.js.map",
+    "pages/products/index.js": "pages/products/index.js.map",
+    "pages/wishlist.js": "pages/wishlist.js.map",
+    "server.js": "server.js.map"
+  }
+}
